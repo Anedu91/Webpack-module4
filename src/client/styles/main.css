@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+}
+.navbar__brand {
+  text-decoration: none;
+}
+.navbar__nav {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+.main {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 5rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+}
+.form input {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+.form input.danger {
+  border-color: red;
+}
+.form button {
+  text-transform: uppercase;
+  background: greenyellow;
+  color: black;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+.danger {
+  color: red;
+}
