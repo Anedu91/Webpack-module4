@@ -6,10 +6,10 @@ const mockAPIResponse = require("./mockAPI");
 const app = express();
 
 //Setting the static folder
-app.use(express.static("src/client"));
+app.use(express.static("dist"));
 
 app.get("/", function (req, res) {
-  res.sendFile("/client/views/index.html", { root: __dirname + "/.." });
+  res.sendFile("dist/index.html");
 });
 
 app.get("/test", function (req, res) {
