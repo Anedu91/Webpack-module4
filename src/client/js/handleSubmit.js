@@ -16,3 +16,5 @@ function handleSubmit(e) {
       document.querySelector("#results").innerHTML = res.message;
     });
 }
+
+export { handleSubmit };
