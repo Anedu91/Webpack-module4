@@ -1,7 +1,4 @@
-import { checkForName } from "./js/nameChecker";
 import { handleSubmit } from "./js/handleSubmit";
 
-alert("I EXIST");
-console.log("CHANGE!!");
-
-export { checkForName, handleSubmit };
+const form = document.querySelector("#form");
+form.addEventListener("submit", handleSubmit);

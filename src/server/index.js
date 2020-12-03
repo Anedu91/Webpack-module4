@@ -17,7 +17,7 @@ app.get("/test", function (req, res) {
 });
 
 //Port and server
-const port = 3000;
+const port = 8080;
 
 app.listen(port, () => {
   console.log(`Listen port ${port}`);

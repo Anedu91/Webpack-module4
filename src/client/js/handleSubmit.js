@@ -1,3 +1,5 @@
+import { checkForName } from "./nameChecker";
+
 function handleSubmit(e) {
   e.preventDefault();
 
@@ -14,6 +16,9 @@ function handleSubmit(e) {
     .then((res) => res.json())
     .then(function (res) {
       document.querySelector("#results").innerHTML = res.message;
+    })
+    .catch((error) => {
+      console.log(error);
     });
 }
 
